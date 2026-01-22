@@ -71,3 +71,28 @@ hr {
     border-radius: 25px;
     width: 100%;
 }
+
+.section-container {
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-style: solid;
+    border-color: #99f2ef;
+    border-radius: 25px;
+    width: 100%;
+    color: #bee4e8;
+    text-align: center;
+}
+
+.section-container h2 {
+    color: #bee4e8;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.section-container p {
+    color: #9fb3b5;
+    font-size: 18px;
+}
