@@ -1,15 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
 .navbar {
-    border-radius: 40px;
-    border-style: solid;
-    border-width: 2px;
-    margin-right: 8%;
-    margin-left: 8%;
-    margin-top: 4%;
-    border-color: #8fedea;
-    padding: 15px !important;
-    background-color: transparent;
+    background: rgba(9, 16, 22, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 255, 255, 0.2);
 
 }
 
@@ -35,12 +29,14 @@
     color: #adedeb;
 }
 .home-h1 {
-    color: #bee4e8;
+    
     text-align: center;
     font-weight: bold;
     font-family: Times New Roman;
     padding-top: 25px;
     font-size: 45px;
+    color: rgb(133, 200, 200);
+    text-shadow: 0 0 10px cyan;
 
 }
 
@@ -51,26 +47,13 @@ hr {
 }
 
 .home-txt {
-    color: #9fb3b5;
+   color: #ffffff;
     text-align: center;
     font-family: Times;
-    font-size: 25px;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
-.home-txt-span {
-    color: #e1eaeb;
-    font-weight: bold;
-}
-.home-container {
-    margin-top: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    border-style: solid;
-    border-color: #99f2ef;
-    border-radius: 25px;
-    width: 100%;
-}
 
 .section-container {
     margin-top: 150px;
@@ -95,4 +78,41 @@ hr {
 .section-container p {
     color: #9fb3b5;
     font-size: 18px;
+}
+.navbar-brand {
+    letter-spacing: 2px;
+    color: cyan !important;
+}
+
+}
+.tagline-home {
+    color: #80deea;
+    text-align: center;
+    padding-top: 3px;
+    font-size: 20px;
+}
+.badge-home{
+    display: inline-block;
+    border: 1px solid cyan;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    margin: 0.3rem;
+    font-size: 0.75rem;
+}
+.custom-btn {
+    border-radius: 30px;
+    padding: 15px;
+    transition: 0.3s;
+}
+.custom-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px cyan;
+}
+.home-container {
+    background: rgba(20, 30, 40, 0.6);
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+    margin-top: 180px;
 }
