@@ -9,7 +9,7 @@
 
 .m-container {
     background-color: #1b2430;
-    height: 100vh;
+   
     padding: 10px;
 }
 
@@ -35,7 +35,7 @@
     font-family: Times New Roman;
     padding-top: 25px;
     font-size: 45px;
-    color: rgb(133, 200, 200);
+    color: rgb(214, 250, 250);
     text-shadow: 0 0 10px cyan;
 
 }
@@ -84,7 +84,7 @@ hr {
     color: cyan !important;
 }
 
-}
+
 .tagline-home {
     color: #80deea;
     text-align: center;
@@ -115,4 +115,12 @@ hr {
     border: 1px solid rgba(0, 255, 255, 0.3);
     box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
     margin-top: 180px;
+}
+.about-h1{
+    color: rgb(214, 250, 250);
+    text-align: center;
+    font-weight: bold;
+    padding-top: 25px;
+    font-size: 45px;
+    text-shadow: 0 0 15px cyan;
 }
