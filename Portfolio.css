@@ -124,3 +124,16 @@ hr {
     font-size: 45px;
     text-shadow: 0 0 15px cyan;
 }
+.skills-card {
+    border-style: solid;
+    border-color: #ffffff;
+    box-shadow: 0 0 15px cyan;
+    width: 100%;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.skill-img {
+    width: 100%;
+    padding: 20px;
+}
