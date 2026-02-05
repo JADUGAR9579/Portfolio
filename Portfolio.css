@@ -137,3 +137,50 @@ hr {
     width: 100%;
     padding: 20px;
 }
+
+/* --- Keyframes and scoped animation rules for the skills section --- */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatY {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-18px); }
+    100% { transform: translateY(0); }
+}
+
+/* stagger utilities (used on the cards) */
+.delayed-1 { animation-delay: 200ms; }
+.delayed-2 { animation-delay: 400ms; }
+.delayed-3 { animation-delay: 600ms; }
+
+/* Apply fade-in only to skill cards inside the skills section */
+#sectionskills .skills-card {
+    transform: translateY(12px);
+    opacity: 0;
+    animation: fadeInUp 900ms ease both;
+    transition: transform .28s ease, box-shadow .28s ease;
+}
+
+/* Floating animation for the image inside floated skill cards */
+#sectionskills .skills-card.float-slow .skill-img {
+    animation: floatY 3.5s ease-in-out infinite;
+}
+
+/* glow pulse on hover (only inside skills section) */
+/* stronger glow on hover using transition (no animation that toggles opacity) */
+#sectionskills .skills-card {
+    transform: translateY(12px);
+    opacity: 0;
+    animation: fadeInUp 900ms ease both;
+    transition: transform .28s ease, box-shadow .36s ease, filter .36s ease, opacity .2s ease;
+}
+
+#sectionskills .skills-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    opacity: 1 !important; /* ensure visible if hovered during entry */
+    z-index: 6;
+    box-shadow: 0 30px 80px rgba(0,255,255,0.22), 0 0 40px rgba(0,255,255,0.18);
+    filter: drop-shadow(0 30px 50px rgba(0,255,255,0.12));
+}
